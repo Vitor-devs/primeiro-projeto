@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primeiro-projeto';
+
+  //Dado a ser compartilhado
+  Usuario: string = "Joaquim";
+
+  UsuarioDados = {
+    email: "joaquimSilva@gmail.com",
+    role: "adm"
+  }
 }

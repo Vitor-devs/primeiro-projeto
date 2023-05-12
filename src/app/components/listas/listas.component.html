@@ -1,0 +1,12 @@
+<div class="separador">
+    <h2>Materias e notas</h2>
+    <ul>
+        
+        <li *ngFor="let animal of animais">
+            Nome: <a routerLink="/listas/{{animal.id}}">{{animal.nome}}</a> -- {{animal.idade}} anos <br>
+            <button (click)="MostrarTipo(animal)">Mostrar tipo dos animais</button>
+            <button (click)="removerAnimal(animal)">Remover esse animal</button>
+        </li>
+        <h3>{{animalTipo}}</h3>
+    </ul>
+</div>

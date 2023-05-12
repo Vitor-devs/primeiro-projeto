@@ -1,0 +1,11 @@
+.titulo-grande{
+    font-size: larger;
+}
+
+.titulo-pequeno{
+    font-size: smaller;
+}
+
+.underline{
+    text-decoration: underline;
+}

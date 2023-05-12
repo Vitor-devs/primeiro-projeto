@@ -1,0 +1,10 @@
+<div class="separador">
+    <div>
+        <h1 *ngIf="mostrar">Estamos mostrando isso pq pode</h1>
+        <h1 *ngIf="name === 'Vitor'; else naoAcheiNome">Seu nome é lindo</h1>
+        <!-- Se ele cair no "else" do ngIf acima ele cai nesse componente abaixo -->
+        <ng-template #naoAcheiNome >
+            <h1>Qual seu nome?</h1>
+        </ng-template>
+    </div>
+</div>

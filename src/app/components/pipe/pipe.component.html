@@ -1,0 +1,8 @@
+<div class="separador">
+    <h2>{{"Algum texto" | uppercase}}</h2>
+    <h2>{{ nome | titlecase}}</h2>
+    <h2>{{ hoje | date: "fullDate"}}</h2> <!--procurar mais pipe operators-->
+
+    <input type="text" id="numero" [(ngModel)]="numero"> <!--Importado um modulo chamado forms module-->
+    <button (click)="dobrar()">Dobre um numero</button>
+</div>

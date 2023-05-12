@@ -1,0 +1,6 @@
+<h2 [ngStyle] = "{'font-size': size + 'px', 'color' : color, 'font-family' : font}">Testando diretiva de estilo</h2>
+<h2 [ngClass] = "classes[0]"> Testando diretiva de classe (grande)</h2>
+<h2 [ngClass] = "classes[1]"> Testando diretiva de classe (pequeno)</h2>
+<h2 [ngClass] = "underline">Óia o sublinhado </h2>
+<!-- importante salientar também que o [ngClass] também pode receber um objeto contendo chave com os nomes de classes e o valor retornando um booleano. Por exemplo: 
+[ngClass] = "{'classe': true, 'outraClasse': false}" -->

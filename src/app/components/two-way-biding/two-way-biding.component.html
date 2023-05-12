@@ -1,0 +1,22 @@
+<div class="separador">
+    <h2>Two way databiding</h2>
+    <form>
+        <!-- cria um input e da o nome dele [(ngModel)]="name" -->
+        <input type="text" [(ngModel)]="name" name="teste" placeholder="Digita ai">
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="name !== ''">
+        <p>O nome lindo é {{name}}</p>
+    </div>
+    
+    <form>
+        <p>Digite seu numero da sorte</p>
+        <input type="number" [(ngModel)]="sorte" name="oi">
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="sorte !== ''">
+        <p>Você vai ganhar {{sorte}} beijos</p>
+    </div>
+    
+
+</div>
