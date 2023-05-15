@@ -17,8 +17,10 @@ export class ListasComponent {
   }
 
   removerAnimal(animal: Animal){
-    console.log(`Removendo vc ${animal.nome}`)
-    this.animais = this.listService.remover(this.animais, animal)
+    this.animais = this.animais.filter((a)=> animal.nome !== a.nome)
+    this.listService.remover(animal.id).subscribe()
+    // console.log(`Removendo vc ${animal.nome}`)
+    // this.listService.remover(this.animais, animal)
     //no método vai ser passado sempre a lista de animais e um animal específico através do botão
   }
 

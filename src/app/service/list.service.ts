@@ -18,9 +18,8 @@ export class ListService {
   
   //Método para retirar os animais
   //Vai receber toda a lista de animais e um animal especifico que vai ser descoberto na hora do clique
-  remover(animais:Animal[], animal:Animal){
-    // retorna através de toda a lista de animais aquele que o nome é diferente do animal encontrado
-    return animais.filter((a)=> animal.nome !== a.nome)
+  remover(id: number){
+    return this.http.delete<Animal>(`${this.url}/${id}`)
   }
   
   getAll(): Observable <Animal[]> {
