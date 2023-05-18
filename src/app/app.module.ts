@@ -19,6 +19,8 @@ import { TwoWayBidingComponent } from './components/two-way-biding/two-way-bidin
 import { AppRoutingModule } from './app-routing.module';
 import { TestComponent } from './components/test/test.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { ListarComponent } from './components/listar/listar.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -38,7 +40,9 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     PipeComponent,
     TwoWayBidingComponent,
     TestComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    ListarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
